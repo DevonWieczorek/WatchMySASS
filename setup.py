@@ -6,7 +6,7 @@ def readme():
 
 setup(
     name='WatchMySASS',
-    version='0.1.0',
+    version='0.1.1',
     description='Compile SCSS inside of HTML files.',
     long_description=readme(),
     classifiers=[
@@ -26,7 +26,7 @@ setup(
     license='MIT',
     packages=find_packages(),
     install_requires=[
-        'pyScss',
+        'scss',
         'beautifulsoup4',
         'argparse',
         'watchdog'
