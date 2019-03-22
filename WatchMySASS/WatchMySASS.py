@@ -4,7 +4,7 @@ import re
 from utils import *
 from bs4 import BeautifulSoup
 # https://pyscss.readthedocs.io/en/latest/python-api.html
-from scss.compiler import compile_string
+from scss import Compiler
 
 class WatchMySASS:
     def __init__(self, argDict):
@@ -71,7 +71,7 @@ class WatchMySASS:
 
     # Compile SCSS and return CSS
     def compileSCSS(self, tag, uncompressed=False):
-        compiled = compile_string(tag.text)
+        compiled = Compiler().compile_string(tag.text)
         if uncompressed == False:
             compiled = stripNewLines(compiled)
         return compiled
