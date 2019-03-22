@@ -16,6 +16,7 @@ If no arguments are passed, WatchMySASS assumes the current working directory.
 WatchMySASS
 ```
 
+
 WatchMySASS also has a few options:
 
 ### --watch [-w] 
