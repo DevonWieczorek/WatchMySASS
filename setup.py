@@ -6,7 +6,7 @@ def readme():
 
 setup(
     name='WatchMySASS',
-    version='0.1.3',
+    version='0.1.4',
     description='Compile SCSS inside of HTML files.',
     long_description=readme(),
     classifiers=[
